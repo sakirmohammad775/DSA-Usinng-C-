@@ -2,18 +2,12 @@
 using namespace std;
 int main()
 {
-    // vector<int>v(100);
-    // vector<int>v(10,3);
-    // vector<int>v2(v);
-    vector<int>v;
-    v.push_back(1);
-    v.push_back(20);
-    v.push_back(3);
-    cout << v.size() << endl;
-    v.clear();
-    cout << v.size() << endl;
-    cout << v[1] << endl;
+    vector<int>v={1,2,3,4,5,6,7,8};
+    v.insert(v.begin()+5,100);
+    for(int x:v){
+        cout<<x<<" ";
+    }
 
 
     return 0;
-}
+} 
